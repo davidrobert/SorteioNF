@@ -4,5 +4,6 @@
     <string name="hello">Hello World, SorteioNFActivity!</string>
     <string name="app_name">SorteioNF</string>
     <string name="calculate">Calcular</string>
+    <string name="one">1</string>
 
 </resources>

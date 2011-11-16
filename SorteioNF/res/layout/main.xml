@@ -39,8 +39,13 @@
             android:id="@+id/calcButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calculate" />
+            android:text="@string/calculate" android:cursorVisible="true" android:visibility="visible"/>
 
     </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sizeSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:visibility="invisible"/>
 
 </LinearLayout>
