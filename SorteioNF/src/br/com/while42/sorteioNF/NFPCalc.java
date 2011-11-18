@@ -4,18 +4,17 @@ import java.util.Calendar;
 
 public class NFPCalc {
 
-	public static long calculateForToday(double individualValue, long numberOfPeople) {
+	public static long calculateForToday(double individualValue, int numberOfPeople) {
 		return NFPCalc.calculate(Calendar.getInstance().get(Calendar.DAY_OF_MONTH),
 				individualValue, numberOfPeople);
 	}
 	
-	protected static long calculate(int dayOfMonth, double individualValue, long numberOfPeople) {
+	protected static long calculate(int dayOfMonth, double individualValue, int numberOfPeople) {
 		// rounds to 2 decimal places
-		long relevantPart =
-				(long)(Double.valueOf(new DecimalFormat("#.##").format(individualValue)) * 100);
+		int relevantPart = (int) (individualValue * 100);
 		
-		long intPart = relevantPart / 100;
-		long centsPart = relevantPart % 100;		
+		int intPart = relevantPart / 100;
+		int centsPart = relevantPart % 100;		
 		
 		return (intPart + centsPart + dayOfMonth) % numberOfPeople;
 	}

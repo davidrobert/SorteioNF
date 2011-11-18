@@ -45,9 +45,16 @@ public class SorteioNFActivity extends Activity {
 					return;
 				}
 
-				double cost = new Double(costText.getText().toString());
+				double cost = 0;
+				try {
+					cost = new Double(costText.getText().toString());
+				} catch (Exception e) {
+					errorDialog.setMessage("erro no double");
+					errorDialog.show();
+					return;
+				}
 
-				long numberOfPeople = (new Integer(sizeText.getText().toString())).intValue();
+				int numberOfPeople = (new Integer(sizeText.getText().toString())).intValue();
 
 				if (numberOfPeople == 0) {
 					errorDialog.show();
