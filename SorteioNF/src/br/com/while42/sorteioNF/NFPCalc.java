@@ -1,5 +1,4 @@
 package br.com.while42.sorteioNF;
-import java.text.DecimalFormat;
 import java.util.Calendar;
 
 public class NFPCalc {
