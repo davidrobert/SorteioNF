@@ -1,7 +1,4 @@
-
-/SorteioNF/bin/classes
-/SorteioNF/bin/res
-/SorteioNF/bin/classes.dex
-/SorteioNF/bin/resources.ap_
-/SorteioNFTest/bin
+/SorteioNF/bin
 /SorteioNF/gen
+/SorteioNFTest/bin
+/SorteioNFTest/gen

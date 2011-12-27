@@ -1,4 +1,4 @@
-package br.com.while42.sorteioNF;
+package br.com.while42.sorteioNF.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,8 +9,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import br.com.while42.sorteioNF.NFPCalc;
+import br.com.while42.sorteioNF.R;
 
-public class SorteioNFActivity extends Activity {
+public class SorteioNF extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
