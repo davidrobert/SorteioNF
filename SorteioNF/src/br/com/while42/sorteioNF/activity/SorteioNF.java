@@ -19,6 +19,8 @@ public class SorteioNF extends Activity {
 
 		final Button button = (Button) findViewById(R.id.calcButton);
 		final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+		final EditText costText = (EditText) findViewById(R.id.costText);
+		final EditText sizeText = (EditText) findViewById(R.id.sizeText);
 
 		alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
@@ -29,31 +31,16 @@ public class SorteioNF extends Activity {
 		button.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-
-				final EditText costText = (EditText) findViewById(R.id.costText);
-				final EditText sizeText = (EditText) findViewById(R.id.sizeText);
-
-				if (costText.getText().toString().length() == 0
-						|| sizeText.getText().toString().length() == 0) {
-					alertDialog.setTitle("Dados inválidos");
-					alertDialog.show();
-					return;
-				}
-
 				double cost = 0;
+				int numberOfPeople = 0;
+
 				try {
-					cost = new Double(costText.getText().toString());
-				} catch (Exception e) {
-					alertDialog.setTitle("Erro no double");
-					alertDialog.show();
-					return;
-				}
-
-				int numberOfPeople = (new Integer(sizeText.getText().toString()))
-						.intValue();
-
-				if (numberOfPeople == 0) {
+					cost = Double.parseDouble(costText.getText().toString());
+					numberOfPeople = Integer.parseInt(sizeText.getText()
+							.toString());
+				} catch (NumberFormatException e) {
 					alertDialog.setTitle("Dados inválidos");
+					alertDialog.setMessage("");
 					alertDialog.show();
 					return;
 				}
@@ -61,8 +48,8 @@ public class SorteioNF extends Activity {
 				Integer result = (int) NFPCalc.calculateForToday(cost,
 						numberOfPeople);
 
-				alertDialog.setTitle("Resultado do Sorteio: "
-						+ result.toString());
+				alertDialog.setTitle("Resultado do Sorteio");
+				alertDialog.setMessage(result.toString());
 				alertDialog.show();
 			}
 		});
