@@ -5,10 +5,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import br.com.while42.sorteioNF.NFPCalc;
 import br.com.while42.sorteioNF.R;
 
@@ -19,31 +17,26 @@ public class SorteioNF extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		Spinner s = (Spinner) findViewById(R.id.sizeSpinner);
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-				this, R.array.sizes, android.R.layout.simple_spinner_item);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);	    
-		s.setAdapter(adapter);
-
 		final Button button = (Button) findViewById(R.id.calcButton);
 		final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-		final AlertDialog errorDialog = new AlertDialog.Builder(this).create();
 
-		errorDialog.setMessage("Dados invalidos");
-		errorDialog.setButton("Voltar", new DialogInterface.OnClickListener() {  
-			public void onClick(DialogInterface dialog, int which) {  
-				return;  
-			} });
+		alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				return;
+			}
+		});
 
 		button.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
 
 				final EditText costText = (EditText) findViewById(R.id.costText);
-				final EditText sizeText = (EditText) findViewById(R.id.sizeText); 
+				final EditText sizeText = (EditText) findViewById(R.id.sizeText);
 
-				if (costText.getText().toString().length() == 0 || sizeText.getText().toString().length() == 0) {
-					errorDialog.show();
+				if (costText.getText().toString().length() == 0
+						|| sizeText.getText().toString().length() == 0) {
+					alertDialog.setTitle("Dados inválidos");
+					alertDialog.show();
 					return;
 				}
 
@@ -51,27 +44,25 @@ public class SorteioNF extends Activity {
 				try {
 					cost = new Double(costText.getText().toString());
 				} catch (Exception e) {
-					errorDialog.setMessage("erro no double");
-					errorDialog.show();
+					alertDialog.setTitle("Erro no double");
+					alertDialog.show();
 					return;
 				}
 
-				int numberOfPeople = (new Integer(sizeText.getText().toString())).intValue();
+				int numberOfPeople = (new Integer(sizeText.getText().toString()))
+						.intValue();
 
 				if (numberOfPeople == 0) {
-					errorDialog.show();
+					alertDialog.setTitle("Dados inválidos");
+					alertDialog.show();
 					return;
 				}
 
-				Integer result = (int)NFPCalc.calculateForToday(cost, numberOfPeople);
+				Integer result = (int) NFPCalc.calculateForToday(cost,
+						numberOfPeople);
 
-				alertDialog.setTitle("Resultado do Sorteio");  
-				alertDialog.setMessage(result.toString());  
-				alertDialog.setButton("OK", new DialogInterface.OnClickListener() {  
-					public void onClick(DialogInterface dialog, int which) {  
-						return;  
-					} });
-
+				alertDialog.setTitle("Resultado do Sorteio: "
+						+ result.toString());
 				alertDialog.show();
 			}
 		});
