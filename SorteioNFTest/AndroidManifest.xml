@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.while42.sorteioNF.test"
+    package="br.com.while42.sorteionf.test"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,7 +8,7 @@
 
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"
-        android:targetPackage="br.com.while42.sorteioNF" />
+        android:targetPackage="br.com.while42.sorteionf" />
 
     <application
         android:icon="@drawable/ic_launcher"

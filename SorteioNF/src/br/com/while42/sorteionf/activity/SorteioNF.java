@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import br.com.while42.sorteioNF.NFPCalc;
-import br.com.while42.sorteioNF.R;
+import br.com.while42.sorteionf.R;
+import br.com.while42.sorteionf.NFPCalc;
 
 public class SorteioNF extends Activity {
 
