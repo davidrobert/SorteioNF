@@ -1,4 +1,4 @@
-package br.com.while42.sorteionf;
+package br.com.while42.sorteionf.model;
 import java.util.Calendar;
 
 public class NFPCalc {
