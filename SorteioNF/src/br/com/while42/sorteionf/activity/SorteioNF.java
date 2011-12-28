@@ -1,4 +1,4 @@
-package br.com.while42.sorteioNF.activity;
+package br.com.while42.sorteionf.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
