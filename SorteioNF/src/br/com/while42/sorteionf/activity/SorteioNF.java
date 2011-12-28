@@ -45,7 +45,7 @@ public class SorteioNF extends Activity {
 					return;
 				}
 
-				Integer result = (int) NFPCalc.calculateForToday(cost,
+				Integer result = (int) new NFPCalc().calculateForToday(cost,
 						numberOfPeople);
 
 				alertDialog.setTitle("Resultado do Sorteio");
