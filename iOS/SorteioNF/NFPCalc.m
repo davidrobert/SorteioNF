@@ -1,17 +1,8 @@
-#import <objc/Object.h>
 #import <stdio.h>
 #import <time.h>
+#import "NFPCalc.h"
 
-@interface NFPCalc: Object
-{
-}
-
-- (long)calculateForTodayWithIndividualValue: (double) individualValue andNumberOfPeople: (int) numberOfPeople;
-- (long)calculateForDay: (int) dayOfMonth andIndividualValue: (double) individualValue andNumberOfPeople: (int) n;
-
-@end
-
-@implementation NFPCalc: Object
+@implementation NFPCalc: NSObject
 
 - (long)calculateForTodayWithIndividualValue: (double) individualValue andNumberOfPeople: (int) numberOfPeople
 {
@@ -97,10 +88,4 @@ void runTests(void)
   }
 
   printf("all tests Ok!\n");
-}
-
-int main(void)
-{
-  runTests();
-  return 0;
 }

@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93AA3C46150FFD2800C086DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA3C45150FFD2800C086DB /* UIKit.framework */; };
+		93AA3C48150FFD2800C086DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA3C47150FFD2800C086DB /* Foundation.framework */; };
+		93AA3C4A150FFD2800C086DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA3C49150FFD2800C086DB /* CoreGraphics.framework */; };
+		93AA3C50150FFD2800C086DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93AA3C4E150FFD2800C086DB /* InfoPlist.strings */; };
+		93AA3C52150FFD2800C086DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C51150FFD2800C086DB /* main.m */; };
+		93AA3C56150FFD2800C086DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C55150FFD2800C086DB /* AppDelegate.m */; };
+		93AA3C59150FFD2800C086DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C58150FFD2800C086DB /* ViewController.m */; };
+		93AA3C5C150FFD2800C086DB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AA3C5A150FFD2800C086DB /* ViewController.xib */; };
+		93AA3C67151000EE00C086DB /* NFPCalc.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C66151000EE00C086DB /* NFPCalc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93AA3C41150FFD2800C086DB /* SorteioNF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SorteioNF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AA3C45150FFD2800C086DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93AA3C47150FFD2800C086DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93AA3C49150FFD2800C086DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93AA3C4D150FFD2800C086DB /* SorteioNF-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SorteioNF-Info.plist"; sourceTree = "<group>"; };
+		93AA3C4F150FFD2800C086DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93AA3C51150FFD2800C086DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93AA3C53150FFD2800C086DB /* SorteioNF-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SorteioNF-Prefix.pch"; sourceTree = "<group>"; };
+		93AA3C54150FFD2800C086DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93AA3C55150FFD2800C086DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93AA3C57150FFD2800C086DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		93AA3C58150FFD2800C086DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93AA3C5B150FFD2800C086DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		93AA3C65151000EE00C086DB /* NFPCalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFPCalc.h; sourceTree = "<group>"; };
+		93AA3C66151000EE00C086DB /* NFPCalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFPCalc.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93AA3C3E150FFD2800C086DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AA3C46150FFD2800C086DB /* UIKit.framework in Frameworks */,
+				93AA3C48150FFD2800C086DB /* Foundation.framework in Frameworks */,
+				93AA3C4A150FFD2800C086DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93AA3C36150FFD2800C086DB = {
+			isa = PBXGroup;
+			children = (
+				93AA3C4B150FFD2800C086DB /* SorteioNF */,
+				93AA3C44150FFD2800C086DB /* Frameworks */,
+				93AA3C42150FFD2800C086DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93AA3C42150FFD2800C086DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93AA3C41150FFD2800C086DB /* SorteioNF.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93AA3C44150FFD2800C086DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93AA3C45150FFD2800C086DB /* UIKit.framework */,
+				93AA3C47150FFD2800C086DB /* Foundation.framework */,
+				93AA3C49150FFD2800C086DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93AA3C4B150FFD2800C086DB /* SorteioNF */ = {
+			isa = PBXGroup;
+			children = (
+				93AA3C65151000EE00C086DB /* NFPCalc.h */,
+				93AA3C66151000EE00C086DB /* NFPCalc.m */,
+				93AA3C54150FFD2800C086DB /* AppDelegate.h */,
+				93AA3C55150FFD2800C086DB /* AppDelegate.m */,
+				93AA3C57150FFD2800C086DB /* ViewController.h */,
+				93AA3C58150FFD2800C086DB /* ViewController.m */,
+				93AA3C5A150FFD2800C086DB /* ViewController.xib */,
+				93AA3C4C150FFD2800C086DB /* Supporting Files */,
+			);
+			path = SorteioNF;
+			sourceTree = "<group>";
+		};
+		93AA3C4C150FFD2800C086DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93AA3C4D150FFD2800C086DB /* SorteioNF-Info.plist */,
+				93AA3C4E150FFD2800C086DB /* InfoPlist.strings */,
+				93AA3C51150FFD2800C086DB /* main.m */,
+				93AA3C53150FFD2800C086DB /* SorteioNF-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93AA3C40150FFD2800C086DB /* SorteioNF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AA3C5F150FFD2800C086DB /* Build configuration list for PBXNativeTarget "SorteioNF" */;
+			buildPhases = (
+				93AA3C3D150FFD2800C086DB /* Sources */,
+				93AA3C3E150FFD2800C086DB /* Frameworks */,
+				93AA3C3F150FFD2800C086DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SorteioNF;
+			productName = SorteioNF;
+			productReference = 93AA3C41150FFD2800C086DB /* SorteioNF.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93AA3C38150FFD2800C086DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 93AA3C3B150FFD2800C086DB /* Build configuration list for PBXProject "SorteioNF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93AA3C36150FFD2800C086DB;
+			productRefGroup = 93AA3C42150FFD2800C086DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93AA3C40150FFD2800C086DB /* SorteioNF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93AA3C3F150FFD2800C086DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AA3C50150FFD2800C086DB /* InfoPlist.strings in Resources */,
+				93AA3C5C150FFD2800C086DB /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93AA3C3D150FFD2800C086DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AA3C52150FFD2800C086DB /* main.m in Sources */,
+				93AA3C56150FFD2800C086DB /* AppDelegate.m in Sources */,
+				93AA3C59150FFD2800C086DB /* ViewController.m in Sources */,
+				93AA3C67151000EE00C086DB /* NFPCalc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93AA3C4E150FFD2800C086DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93AA3C4F150FFD2800C086DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93AA3C5A150FFD2800C086DB /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93AA3C5B150FFD2800C086DB /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93AA3C5D150FFD2800C086DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93AA3C5E150FFD2800C086DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93AA3C60150FFD2800C086DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SorteioNF/SorteioNF-Prefix.pch";
+				INFOPLIST_FILE = "SorteioNF/SorteioNF-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93AA3C61150FFD2800C086DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SorteioNF/SorteioNF-Prefix.pch";
+				INFOPLIST_FILE = "SorteioNF/SorteioNF-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93AA3C3B150FFD2800C086DB /* Build configuration list for PBXProject "SorteioNF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AA3C5D150FFD2800C086DB /* Debug */,
+				93AA3C5E150FFD2800C086DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AA3C5F150FFD2800C086DB /* Build configuration list for PBXNativeTarget "SorteioNF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AA3C60150FFD2800C086DB /* Debug */,
+				93AA3C61150FFD2800C086DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93AA3C38150FFD2800C086DB /* Project object */;
+}
