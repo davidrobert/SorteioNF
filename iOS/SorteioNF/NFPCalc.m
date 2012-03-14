@@ -18,12 +18,15 @@
 
 - (long)calculateForDay: (int) dayOfMonth andIndividualValue: (double) individualValue andNumberOfPeople: (int) numberOfPeople
 {
-  int relevantPart = (int) (individualValue * 100);
+    // ugly hack to ceil properly
+    individualValue += 0.005;
 
-  int intPart = relevantPart / 100;
-  int centsPart = relevantPart % 100;
+    int relevantPart = (int) (individualValue * 100);
 
-  return (intPart + centsPart + dayOfMonth) % numberOfPeople;
+    int intPart = relevantPart / 100;
+    int centsPart = relevantPart % 100;
+
+    return (intPart + centsPart + dayOfMonth) % numberOfPeople;
 }
 
 @end
