@@ -16,6 +16,7 @@
 		93AA3C59150FFD2800C086DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C58150FFD2800C086DB /* ViewController.m */; };
 		93AA3C5C150FFD2800C086DB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AA3C5A150FFD2800C086DB /* ViewController.xib */; };
 		93AA3C67151000EE00C086DB /* NFPCalc.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA3C66151000EE00C086DB /* NFPCalc.m */; };
+		93F19B381514001E00688FD7 /* SorteioNF.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F19B371514001E00688FD7 /* SorteioNF.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		93AA3C5B150FFD2800C086DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		93AA3C65151000EE00C086DB /* NFPCalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFPCalc.h; sourceTree = "<group>"; };
 		93AA3C66151000EE00C086DB /* NFPCalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFPCalc.m; sourceTree = "<group>"; };
+		93F19B371514001E00688FD7 /* SorteioNF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SorteioNF.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		93AA3C36150FFD2800C086DB = {
 			isa = PBXGroup;
 			children = (
+				93F19B371514001E00688FD7 /* SorteioNF.png */,
 				93AA3C4B150FFD2800C086DB /* SorteioNF */,
 				93AA3C44150FFD2800C086DB /* Frameworks */,
 				93AA3C42150FFD2800C086DB /* Products */,
@@ -155,6 +158,7 @@
 			files = (
 				93AA3C50150FFD2800C086DB /* InfoPlist.strings in Resources */,
 				93AA3C5C150FFD2800C086DB /* ViewController.xib in Resources */,
+				93F19B381514001E00688FD7 /* SorteioNF.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,7 @@
 				93AA3C61150FFD2800C086DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
