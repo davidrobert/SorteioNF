@@ -4,14 +4,14 @@
 
 @implementation NFPCalc: NSObject
 
-- (long)calculateForTodayWithIndividualValue: (double) individualValue andNumberOfPeople: (int) numberOfPeople
+- (long)calculateForTodayWithIndividualValue: (double) individualValue andNumberOfPeople: (int) n
 {
   time_t result = time(NULL);
   struct tm *currentTime = localtime(&result);
 
   int dayOfMonth = currentTime->tm_mday;
 
-  long value = [self calculateForDay: dayOfMonth andIndividualValue: individualValue andNumberOfPeople: numberOfPeople];
+  long value = [self calculateForDay: dayOfMonth andIndividualValue: individualValue andNumberOfPeople: n];
 
   return value;
 }

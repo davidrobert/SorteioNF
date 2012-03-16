@@ -64,11 +64,11 @@
 
 - (IBAction)calcular:(id)sender
 {
-    float totalIndividual = [self.totalIndividual.text floatValue];
-    int numeroDePessoas = [self.numeroDePessoas.text intValue];
+    float t = [self.totalIndividual.text floatValue];
+    int n = [self.numeroDePessoas.text intValue];
     
     NFPCalc *nfpCalc = [NFPCalc new];
-    int resultado = [nfpCalc calculateForTodayWithIndividualValue:totalIndividual andNumberOfPeople:numeroDePessoas];
+    int resultado = [nfpCalc calculateForTodayWithIndividualValue:t andNumberOfPeople:n];
     
 
     NSString *message = [[NSString alloc] initWithFormat:@"%d", resultado];
@@ -80,7 +80,5 @@
                           cancelButtonTitle:@"OK"
                           otherButtonTitles:nil];
     [alert show];
-    
-    NSLog(@"resultado: %d", resultado);
 }
 @end
